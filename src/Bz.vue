@@ -1,6 +1,3 @@
-<style lang="less">
-</style>
-
 <template>
   <div class="ui left action input field">
     <button class="ui icon button clipboard" @mouseenter="copyEnter" @mouseleave="copyLeave" data-content="" >
