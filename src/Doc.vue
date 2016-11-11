@@ -1,6 +1,3 @@
-<style lang="less">
-</style>
-
 <template>
   <div class="ui segment">
     <h1>{{title}}</h1>
