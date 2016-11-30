@@ -2,7 +2,6 @@
   "name": "bz-base",
   "version": "2.0.0",
   "description": "bz-base",
-  "main": "dist/main.js",
   "main": "src/Bz.vue",
   "keywords": [
     "vue",
@@ -19,7 +18,6 @@
   },
   "homepage": "https://github.com/bigzhu/bz-base#readme",
   "files": [
-    "dist", 
     "src/Bz.vue",
     "src/assets"
   ],
