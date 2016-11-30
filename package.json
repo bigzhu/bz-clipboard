@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "description": "bz-base",
   "main": "dist/main.js",
+  "main": "src/Bz.vue",
   "keywords": [
     "vue",
     "component",
@@ -18,7 +19,9 @@
   },
   "homepage": "https://github.com/bigzhu/bz-base#readme",
   "files": [
-    "dist"
+    "dist", 
+    "src/Bz.vue",
+    "src/assets"
   ],
   "scripts": {
     "dev": "node build/dev-server.js",
