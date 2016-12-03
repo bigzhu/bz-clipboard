@@ -1,6 +1,6 @@
-# bz-base
+# bz-clipboard
 
-> bz-base
+> bz-clipboard
 
 ## Build Setup
 

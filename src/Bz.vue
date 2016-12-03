@@ -9,8 +9,6 @@
 
 <script>
   import $ from 'jquery'
-  import popup from 'semantic-ui-popup'
-  $.fn.popup = popup
   import ZeroClipboard from 'zeroclipboard'
   export default {
     props: {
@@ -24,7 +22,7 @@
     data: function () {
       return {}
     },
-    ready () {
+    mounted () {
       ZeroClipboard.config({swfPath: '/static/ZeroClipboard.swf'})
     },
     methods: {
@@ -32,6 +30,7 @@
         $(event.target).select()
       },
       copyEnter: function (event) {
+        console.log($('.button.clipboard'))
         $('.button.clipboard').popup({position: 'left center', content: '点击复制内容'})
         let client = new ZeroClipboard($(event.target))
         client.on('copy', function (event) {
