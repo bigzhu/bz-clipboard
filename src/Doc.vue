@@ -1,32 +1,23 @@
 <template>
-  <div class="ui segment">
-    <h1>{{title}}</h1>
-    <p>
-      {{desc}}
-    </p>
-    <table class="ui celled table">
-      <thead>
-        <tr><th>参数</th><th>说明</th></tr>
-      </thead>
-      <tbody>
-        <tr v-show="parm_desc">
-          <td colspan="2" v-html="parm_desc"></td>
-        </tr>
-        <tr v-for="parm in parms"> <td class="single line"> {{parm.parm}} </td> <td> {{parm.desc}} </td></tr>
-      </tbody>
-    </table>
-    <code v-text="code">
-    </code>
-    <div class="ui divider"></div>
-    <clipboard :content="message">
-    </clipboard>
+  <div>
+    <doc :name="name"
+      :desc="desc"
+      :parm_desc="parm_desc"
+      :parms="parms"
+      :code="code"
+      >
+      <clipboard :content="message"></clipboard>
+    </doc>
   </div>
 </template>
 
 <script>
   import Clipboard from './Bz'
+  import Doc from 'bz-doc'
+
   export default {
     components: {
+      Doc,
       Clipboard
     },
     data: function () {
