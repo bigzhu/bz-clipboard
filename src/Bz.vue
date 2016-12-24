@@ -31,12 +31,12 @@
       },
       copyEnter: function (event) {
         console.log($('.button.clipboard'))
-        $('.button.clipboard').popup({position: 'left center', content: '点击复制内容'})
+        $('.button.clipboard').popup({position: 'right center', content: '点击复制内容'})
         let client = new ZeroClipboard($(event.target))
         client.on('copy', function (event) {
           let content = $(event.target).next().val()
           event.clipboardData.setData('text/plain', content)
-          $('.button.clipboard').popup({content: '已复制', position: 'left center', on: 'click'})
+          $('.button.clipboard').popup({content: '已复制', position: 'right center', on: 'click'})
         })
       },
       copyLeave: function () {
